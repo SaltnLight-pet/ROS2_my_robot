@@ -20,6 +20,8 @@ sudo apt update
 sudo apt install ros-galactic-joint-state-publisher-gui  # joint-state-publisher-gui 패키지 설치
 sudo apt install ros-galactic-xacro  # xacro 패키지 설치
 sudo apt install ros-galactic-gazebo*  # gazebo simulation 관련 모든 패키지 설치
+sudo apt install ros-galactic-controller-manager  # controll mannger 패키지 설치
+sudo apt install ros-galactic-tf*  # tf 관련 모든 패키지 설치
 ```
 ### 01_display.launch.py
 ```python
@@ -30,11 +32,20 @@ ros2 launch my_robot_description display.launch.py
 ```python
 # rviz2에서 로봇의 모형 및 tf 확인
 ros2 launch my_robot_description launch_sim.launch.py
-# 추가적으로 로봇을 키보드로 움직일 수 있는 명령어
-ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+# 로봇을 키보드로 움직일 수 있는 명령어
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+# 주의
+# 가제보를 닫고 재실행 시 오류가 뜨면 다음의 코드를 실행해준다
+killall gzserver gzclient
 ```
 ## 실행 결과
 ### 01_display.launch.py
-![display.launch.py](https://github.com/SaltnLight-pet/ROS2_my_robot/assets/142612336/39f2c833-0161-4c96-9206-e6fbc3ba436a)
+<p align="center"><img src="https://github.com/SaltnLight-pet/ROS2_my_robot/assets/142612336/39f2c833-0161-4c96-9206-e6fbc3ba436a"  width="800" height="450"></p>
+
 ### 02_launch_sim.launch.py
+<p align="center"><img src="https://github.com/SaltnLight-pet/ROS2_my_robot/assets/142612336/32f9ecf1-3eeb-4aa9-b465-a3ed93745543"  width="800" height="450"></p>
+
+
+
 
