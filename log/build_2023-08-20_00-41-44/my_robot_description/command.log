@@ -1,0 +1,4 @@
+Invoking command in '/home/pet/ROS2_study/my_robot/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/pet/.local/bin/cmake --build /home/pet/ROS2_study/my_robot/build/my_robot_description -- -j16 -l16
+Invoked command in '/home/pet/ROS2_study/my_robot/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/pet/.local/bin/cmake --build /home/pet/ROS2_study/my_robot/build/my_robot_description -- -j16 -l16
+Invoking command in '/home/pet/ROS2_study/my_robot/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/pet/.local/bin/cmake --install /home/pet/ROS2_study/my_robot/build/my_robot_description
+Invoked command in '/home/pet/ROS2_study/my_robot/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /home/pet/.local/bin/cmake --install /home/pet/ROS2_study/my_robot/build/my_robot_description
